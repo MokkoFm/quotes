@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="quote-box">
+        <p id="text">The question isn’t who is going to let me; it’s who is going to stop me</p>
+        <div className="author">
+          <span id="author">Benjamin Franklin</span>
+        </div>
+        <div className="buttons">
+          <div className="social">
+            <a id="tweet-quote"><i class="fab fa-twitter"></i></a>
+            <a id="fb-quote"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div className="submit">
+            <button id="new-quote">New quote</button>
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
