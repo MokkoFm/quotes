@@ -5,13 +5,17 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      quote: "The question isn’t who is going to let me; it’s who is going to stop me",
+      author: 'Benjamin Franklin'
+    }
   }
   render() {
     return (
       <div id="quote-box">
-        <p id="text">The question isn’t who is going to let me; it’s who is going to stop me</p>
+        <p id="text">{this.state.quote}</p>
         <div className="author">
-          <span id="author">Benjamin Franklin</span>
+          <span id="author">{this.state.author}</span>
         </div>
         <div className="buttons">
           <div className="social">
