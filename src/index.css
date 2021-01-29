@@ -63,7 +63,6 @@ code {
 
 .social a {
   margin-right: 10px;
-  width: 40px;
   background-color: #38c09d;
   color: white;
   padding: 7px;
@@ -72,6 +71,10 @@ code {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+
+.social i {
+  width: 20px;
 }
 
 .social {

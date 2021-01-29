@@ -15,7 +15,7 @@ class App extends React.Component {
         </div>
         <div className="buttons">
           <div className="social">
-            <a id="tweet-quote"><i class="fab fa-twitter"></i></a>
+            <a id="tweet-quote" href="twitter.com/intent/tweet"><i class="fab fa-twitter"></i></a>
             <a id="fb-quote"><i class="fab fa-facebook-f"></i></a>
           </div>
           <div className="submit">
