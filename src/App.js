@@ -20,7 +20,7 @@ const quotes = [
   },
 ]
 
-let index = 1;
+let index = 0;
 
 class App extends React.Component {
   constructor(props) {
@@ -28,16 +28,21 @@ class App extends React.Component {
     this.state = {
       quote: "The question isn’t who is going to let me; it’s who is going to stop me",
       author: 'Benjamin Franklin',
+      index: 1,
     }
   }
   changeQuote() {
-    while (index < quotes.length) {
+    if (this.state.index < quotes.length) {
       this.setState({
-        quote: quotes[index].quote,
-        author: quotes[index].author,
+        quote: quotes[this.state.index].quote,
+        author: quotes[this.state.index].author,
+        index: this.state.index + 1,
+      })
+    } else {
+      this.setState({
+        index: 0,
       })
     }
-    index++;
   }
   render() {
     return (
