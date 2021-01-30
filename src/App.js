@@ -20,8 +20,6 @@ const quotes = [
   },
 ]
 
-let index = 0;
-
 class App extends React.Component {
   constructor(props) {
     super(props);
